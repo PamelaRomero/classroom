@@ -66,6 +66,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 #include "../SPI/SPI_implement_me.h"
 
@@ -73,7 +74,7 @@
 #include "ST7735_commands.h"
 
 #define swap(a, b) { int16_t t = a; a = b; b = t; }
-
+int wrap = true;
 ///FONTS
 // https://learn.adafruit.com/adafruit-gfx-graphics-library/using-fonts
 const char Font[54*5] = {
