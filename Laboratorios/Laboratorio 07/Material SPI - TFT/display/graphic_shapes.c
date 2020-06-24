@@ -65,6 +65,7 @@
  ****************************************************/
 
 #include <stdlib.h>
+#include <string.h>
 
 #include "../SPI/SPI_implement_me.h"
 

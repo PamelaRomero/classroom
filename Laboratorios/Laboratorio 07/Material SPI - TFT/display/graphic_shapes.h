@@ -73,7 +73,19 @@
 #define TFT_HEIGHT 128
 #define TFT_WIDTH 160
 
+///////////////////////////////////////////////////////////////////////////////////////////
+// Modificación realizada por Camila Turrieta y Felipe Sanchez
+// Basada en libreria de Adafruit.
+//////////////////////////////////////////////////////////////////////////////////////////////
 
+const char Font[54*5];
+const char Font2[44*5];
+
+void setTextWrap(int w);
+void drawChar(int16_t x,int16_t y,uint16_t c,uint16_t color, uint16_t bg, uint16_t size);
+void drawtext(int16_t x,int16_t y, char * text,uint16_t color, uint16_t bg, uint16_t size);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 /* Basic routines */
 
